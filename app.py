@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.read_excel("https://raw.githubusercontent.com/pnoone8/HHG_Helper/main/HHG.xlsx")
 
-st.title("Happy Hunting Grounds Helper Tool")
+st.title("Happy Hunting Grounds Cheat Sheet")
 
 
 def group_seasons(seasons):
@@ -57,7 +57,7 @@ if selection:
 
     if found:
         for team, seasons in results.items():
-            st.subheader(f"{team} have played in the Premier League in:")
+            st.subheader(f"{team} have played in the Premier League in the following seasons:")
 
             grouped = group_seasons(seasons)
             st.write(", ".join(grouped))
