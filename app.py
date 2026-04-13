@@ -45,7 +45,7 @@ if selection:
 
     for season in df.columns:
         for team in df[season].astype(str):
-            team_lower = team.lower()
+            team_lower = str(team).lower()
             team_words = team_lower.split()
 
             if all(word in team_words for word in selection_words):
