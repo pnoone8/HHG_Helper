@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel("/Users/patricknoone/Desktop/HHG.xlsx")
+df = pd.read_excel("https://raw.githubusercontent.com/pnoone8/HHG_Helper/main/HHG.xlsx")
 
 print("\nHappy Hunting Grounds Helper Tool\n")
 
